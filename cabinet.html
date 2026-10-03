@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мой кабинет — Brain Ecology</title>
+<link rel="icon" href="img/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="cab">
+
+  <aside class="cab-side" id="cab-menu">
+    <a class="logo" href="index.html" aria-label="Brain Ecology — на сайт">
+      <svg width="40" height="34" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 30H14C7 30 3 25 5 19C2 14 6 8 12 9C13 4 19 2 23 5C26 2 32 2 35 5C40 4 45 9 43 14C46 18 44 24 39 25C38 29 33 31 29 29"/><path d="M12 9C13 13 17 15 20 13"/><path d="M23 5C22 9 25 12 28 11"/><path d="M35 5C34 9 37 12 40 13"/><path d="M5 19C9 18 12 20 13 24"/><path d="M19 19C23 16 28 20 33 17"/><path d="M29 29C27 26 24 26 22 30C21 33 22 36 24 38"/><path d="M25 33C28 29 33 29 36 31C33 35 28 35 25 33Z" fill="currentColor"/></svg>
+      <span class="logo__text"><span class="logo__brain">Brain</span><span class="logo__ecology">Ecology</span></span>
+    </a>
+    <nav class="cab-nav" aria-label="Разделы кабинета">
+      <a class="is-active" href="cabinet.html" aria-current="page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Главная</a>
+      <a href="module.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-5a2 2 0 0 0-2 2"/><path d="M13 20a2 2 0 0 1 2-2h5V5"/></svg>Мои курсы</a>
+      <a href="#tasks"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>Мои практики</a>
+      <a href="#progress"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Мои нейроритуалы</a>
+      <a href="#tasks"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Нейротренировки</a>
+      <a href="#progress"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Мой прогресс</a>
+      <a href="#materials"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Мои материалы</a>
+      <a href="#curator"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Сообщения<span class="badge">2</span></a>
+      <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>Сертификаты</a>
+      <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1 13H6z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Мои покупки</a>
+      <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Профиль</a>
+    </nav>
+    <a class="cab-side__exit" href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4"/><path d="M10 8l-4 4 4 4M6 12h11"/></svg>Выйти на сайт</a>
+  </aside>
+
+  <main class="cab-main">
+    <div class="cab-top">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="icon-btn cab-burger" type="button" aria-label="Меню кабинета" aria-expanded="false" data-toggle="#cab-menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div>
+          <h1>Добрый день, [Имя]</h1>
+          <p class="muted">Продолжайте с того места, на котором остановились.</p>
+        </div>
+      </div>
+      <div class="cab-top__right">
+        <button class="icon-btn" type="button" aria-label="Уведомления: 2 новых"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg><span class="dot"></span></button>
+        <span class="me" aria-label="Профиль">ИФ</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <section class="active-course">
+        <svg class="bg-brain" width="340" height="283" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 30H14C7 30 3 25 5 19C2 14 6 8 12 9C13 4 19 2 23 5C26 2 32 2 35 5C40 4 45 9 43 14C46 18 44 24 39 25C38 29 33 31 29 29"/><path d="M12 9C13 13 17 15 20 13"/><path d="M23 5C22 9 25 12 28 11"/><path d="M35 5C34 9 37 12 40 13"/><path d="M19 19C23 16 28 20 33 17"/><path d="M29 29C27 26 24 26 22 30C21 33 22 36 24 38"/></svg>
+        <span class="active-course__label">Активный курс</span>
+        <h2>Восстановление мозга и тела офисного работника</h2>
+        <div class="active-course__meta"><span>Модуль 4 из 12</span><span>·</span><span>Сон и восстановление мозга</span></div>
+        <div>
+          <div class="big-bar"><i style="width:33%"></i></div>
+          <p style="margin-top:8px;color:#E4EFFE;font-size:15px"><b style="color:#fff">33%</b> программы завершено</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center">
+          <a class="btn btn--white btn--lg" href="module.html">Продолжить обучение
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="active-course__next">Следующий урок: Практика «Вечерний ритуал» · 12 мин</span>
+        </div>
+      </section>
+
+      <section class="panel tasks" id="tasks">
+        <div class="panel__head"><h2>Задачи на сегодня</h2><span class="muted" style="font-size:14px" data-task-count>1 из 3</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px" data-tasks>
+          <button class="task is-done" type="button">
+            <span class="task__box"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="task__text"><span class="task__title">Нейроритуал: утренняя пауза без телефона</span><span class="task__meta">Нейроритуал · 10 мин</span></span>
+          </button>
+          <button class="task" type="button">
+            <span class="task__box"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="task__text"><span class="task__title">Нейротренировка: удержание внимания</span><span class="task__meta">Тренажёр · 7 мин</span></span>
+          </button>
+          <button class="task" type="button">
+            <span class="task__box"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="task__text"><span class="task__title">Дневник сна: отметить прошлую ночь</span><span class="task__meta">Диагностика · 2 мин</span></span>
+          </button>
+        </div>
+        <p class="tasks__all" data-all-done hidden>Все задачи на сегодня выполнены!</p>
+      </section>
+    </div>
+
+    <section id="progress" style="display:flex;flex-direction:column;gap:16px">
+      <div class="panel__head"><h2 style="font-size:24px;font-weight:800">Мой прогресс</h2></div>
+      <span class="group-label">Образовательные результаты</span>
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric__label">Прогресс обучения</span>
+          <span class="metric__value">12 <small>из 36 уроков</small></span>
+          <div class="bar"><i style="width:33%"></i></div>
+        </div>
+        <div class="metric">
+          <span class="metric__label">Прогресс практик</span>
+          <span class="metric__value">9 <small>из 28 заданий</small></span>
+          <div class="bar"><i style="width:32%"></i></div>
+        </div>
+        <div class="metric">
+          <span class="metric__label">Регулярность нейроритуалов</span>
+          <span class="metric__value">5 <small>из 7 дней</small></span>
+          <div class="week" aria-label="Выполнено в пн, вт, чт, пт, вс">
+            <span class="on">Пн</span><span class="on">Вт</span><span>Ср</span><span class="on">Чт</span><span class="on">Пт</span><span>Сб</span><span class="on">Вс</span>
+          </div>
+        </div>
+        <div class="metric">
+          <span class="metric__label">Результаты тестов</span>
+          <span class="metric__value">86% <small>средний балл</small></span>
+          <span class="muted" style="font-size:14px">3 теста пройдено</span>
+        </div>
+      </div>
+
+      <div class="self">
+        <div class="self__head">
+          <span class="group-label">Самооценка состояния</span>
+          <small>Субъективная оценка по шкале 1–10. Не является медицинским показателем.</small>
+        </div>
+        <div class="self__grid">
+          <div class="rate" data-key="energy">
+            <b>Энергия в течение дня</b>
+            <div class="rate__bars" aria-hidden="true"><i style="height:40%"></i><i style="height:50%"></i><i style="height:50%"></i><i style="height:60%"></i></div>
+            <span class="rate__text">Старт 4 → сейчас <b class="rate__now">6</b></span>
+          </div>
+          <div class="rate" data-key="sleep">
+            <b>Качество сна</b>
+            <div class="rate__bars" aria-hidden="true"><i style="height:50%"></i><i style="height:50%"></i><i style="height:60%"></i><i style="height:70%"></i></div>
+            <span class="rate__text">Старт 5 → сейчас <b class="rate__now">7</b></span>
+          </div>
+          <div class="rate" data-key="focus">
+            <b>Концентрация</b>
+            <div class="rate__bars" aria-hidden="true"><i style="height:40%"></i><i style="height:50%"></i><i style="height:40%"></i><i style="height:55%"></i></div>
+            <span class="rate__text">Старт 4 → сейчас <b class="rate__now">5,5</b></span>
+          </div>
+        </div>
+        <button class="btn" type="button" data-open-dialog="rate-dialog">Отметить самочувствие за неделю</button>
+      </div>
+    </section>
+
+    <div class="row">
+      <section class="panel" id="curator" style="flex:1 1 340px">
+        <h2 style="font-size:20px">Мой куратор</h2>
+        <div class="person"><span class="avatar avatar--sm">[Фото]</span><span><b>[Имя куратора]</b><small>Отвечает в течение [N] часов</small></span></div>
+        <div class="curator-msg">«Отличная работа с дневником сна! Попробуйте на этой неделе сдвинуть отключение экранов на 30 минут раньше.»<small>Вчера, 18:40</small></div>
+        <a class="btn btn--ghost" href="module.html#ask" style="align-self:flex-start">Задать вопрос</a>
+      </section>
+      <section class="panel" id="materials" style="flex:1 1 340px">
+        <div class="panel__head"><h2>Мои материалы</h2><a href="#materials" style="font-size:14px;font-weight:600">Все</a></div>
+        <a class="file" href="#materials"><span class="file__ext">PDF</span><span><b>Чек-лист вечернего ритуала</b><small>Модуль 4</small></span></a>
+        <a class="file" href="#materials"><span class="file__ext">PDF</span><span><b>Информационная гигиена: памятка</b><small>Модуль 2</small></span></a>
+        <div class="upsell"><span><b>Стрессоустойчивый мозг</b><small>Курс ещё не приобретён</small></span><a href="course.html?id=2">Узнать о курсе →</a></div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<dialog class="dialog" id="rate-dialog" aria-labelledby="rate-title">
+  <form class="dialog__body" method="dialog" id="rate-form">
+    <button class="dialog__close" value="cancel" formnovalidate aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h2 id="rate-title">Как вы себя чувствуете на этой неделе?</h2>
+    <p class="muted">Оцените по шкале от 1 до 10. Это субъективная оценка — она помогает видеть динамику, но не является диагнозом.</p>
+    <div class="range"><div class="range__top"><label for="r-energy">Энергия в течение дня</label><output for="r-energy">6</output></div><input id="r-energy" name="energy" type="range" min="1" max="10" step="0.5" value="6"></div>
+    <div class="range"><div class="range__top"><label for="r-sleep">Качество сна</label><output for="r-sleep">7</output></div><input id="r-sleep" name="sleep" type="range" min="1" max="10" step="0.5" value="7"></div>
+    <div class="range"><div class="range__top"><label for="r-focus">Концентрация</label><output for="r-focus">5,5</output></div><input id="r-focus" name="focus" type="range" min="1" max="10" step="0.5" value="5.5"></div>
+    <button class="btn btn--mint btn--block" type="submit">Сохранить</button>
+  </form>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>

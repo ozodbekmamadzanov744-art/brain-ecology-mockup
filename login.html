@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вход и регистрация — Brain Ecology</title>
+<link rel="icon" href="img/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="auth">
+  <section class="auth__brand">
+    <svg class="auth__bg" width="520" height="433" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 30H14C7 30 3 25 5 19C2 14 6 8 12 9C13 4 19 2 23 5C26 2 32 2 35 5C40 4 45 9 43 14C46 18 44 24 39 25C38 29 33 31 29 29"/><path d="M12 9C13 13 17 15 20 13"/><path d="M23 5C22 9 25 12 28 11"/><path d="M35 5C34 9 37 12 40 13"/><path d="M5 19C9 18 12 20 13 24"/><path d="M19 19C23 16 28 20 33 17"/><path d="M29 29C27 26 24 26 22 30C21 33 22 36 24 38"/><path d="M25 33C28 29 33 29 36 31C33 35 28 35 25 33Z"/></svg>
+    <a class="logo logo--light" href="index.html" aria-label="Brain Ecology — на главную">
+      <svg width="42" height="35" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 30H14C7 30 3 25 5 19C2 14 6 8 12 9C13 4 19 2 23 5C26 2 32 2 35 5C40 4 45 9 43 14C46 18 44 24 39 25C38 29 33 31 29 29"/><path d="M12 9C13 13 17 15 20 13"/><path d="M23 5C22 9 25 12 28 11"/><path d="M35 5C34 9 37 12 40 13"/><path d="M5 19C9 18 12 20 13 24"/><path d="M19 19C23 16 28 20 33 17"/><path d="M29 29C27 26 24 26 22 30C21 33 22 36 24 38"/><path d="M25 33C28 29 33 29 36 31C33 35 28 35 25 33Z" fill="currentColor"/></svg>
+      <span class="logo__text"><span class="logo__brain">Brain</span><span class="logo__ecology">Ecology</span></span>
+    </a>
+    <div class="auth__promo">
+      <h1>Один аккаунт — для сайта и обучения</h1>
+      <p>Купили курс на сайте — он сразу появится в личном кабинете. Повторно регистрироваться не нужно.</p>
+      <ul class="auth__perks">
+        <li><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Курсы, задания и прогресс в одном месте</li>
+        <li><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Связь с куратором</li>
+        <li><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Обучение продолжается с того места, где вы остановились</li>
+      </ul>
+    </div>
+    <span style="font-size:14px;color:#BFE6FF;position:relative">Здоровье мозга. Восстановление. Развитие.</span>
+  </section>
+
+  <section class="auth__form-wrap">
+    <div class="auth__card" data-tabs>
+      <div class="tabs" role="tablist" aria-label="Вход или регистрация">
+        <button class="tabs__btn" type="button" role="tab" id="tab-login" aria-controls="panel-login" aria-selected="true">Вход</button>
+        <button class="tabs__btn" type="button" role="tab" id="tab-reg" aria-controls="panel-reg" aria-selected="false" tabindex="-1">Регистрация</button>
+      </div>
+
+      <form class="tab-panel" id="panel-login" role="tabpanel" aria-labelledby="tab-login" action="cabinet.html">
+        <h2>С возвращением</h2>
+        <label class="field">Электронная почта<input class="input" type="email" placeholder="name@example.com" autocomplete="email"></label>
+        <label class="field">Пароль<input class="input" type="password" placeholder="Введите пароль" autocomplete="current-password"></label>
+        <a class="forgot" href="#">Забыли пароль?</a>
+        <button class="btn btn--primary btn--block" type="submit">Войти</button>
+      </form>
+
+      <form class="tab-panel" id="panel-reg" role="tabpanel" aria-labelledby="tab-reg" action="cabinet.html" hidden>
+        <h2>Создайте аккаунт</h2>
+        <label class="field">Имя<input class="input" type="text" placeholder="Как к вам обращаться" autocomplete="given-name"></label>
+        <label class="field">Электронная почта<input class="input" type="email" placeholder="name@example.com" autocomplete="email"></label>
+        <label class="field">Телефон <span class="field__hint">— необязательно</span><input class="input" type="tel" placeholder="+996 / +7" autocomplete="tel"></label>
+        <label class="field">Пароль<input class="input" type="password" placeholder="Не менее 8 символов" autocomplete="new-password"></label>
+        <label class="check"><input type="checkbox"><span>Принимаю <a href="#">оферту</a> и даю согласие на обработку <a href="#">персональных данных</a></span></label>
+        <button class="btn btn--primary btn--block" type="submit">Зарегистрироваться</button>
+        <span class="muted" style="font-size:13px;text-align:center">Мы отправим письмо для подтверждения почты</span>
+      </form>
+
+      <div class="divider">или</div>
+      <div class="socials">
+        <a class="btn btn--ghost" href="cabinet.html"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.2 13.6a6 6 0 0 1 0-3.8V7.1H2.7a10 10 0 0 0 0 9.2z"/><path fill="#EA4335" d="M12 5.9c1.5 0 2.9.5 4 1.6l3-3A10 10 0 0 0 2.7 7.1l3.5 2.7C7 7.3 9.3 5.9 12 5.9z"/></svg>Google</a>
+        <a class="btn btn--ghost" href="cabinet.html"><svg width="18" height="20" viewBox="0 0 24 24" fill="#0E1B2E" aria-hidden="true"><path d="M16.37 12.62c-.02-2.43 1.99-3.6 2.08-3.66-1.13-1.66-2.9-1.89-3.53-1.91-1.5-.15-2.93.88-3.69.88-.77 0-1.94-.86-3.19-.84-1.64.03-3.15.95-4 2.42-1.7 2.96-.44 7.33 1.22 9.73.81 1.17 1.78 2.49 3.05 2.44 1.22-.05 1.69-.79 3.17-.79 1.48 0 1.9.79 3.19.76 1.32-.02 2.15-1.19 2.95-2.37.93-1.36 1.31-2.68 1.33-2.75-.03-.01-2.55-.98-2.58-3.91zM13.96 5.5c.67-.82 1.13-1.95 1-3.08-.97.04-2.14.65-2.84 1.46-.62.72-1.17 1.87-1.02 2.98 1.08.08 2.19-.55 2.86-1.36z"/></svg>Apple</a>
+      </div>
+      <p class="muted" style="font-size:13px;text-align:center">Макет: вход работает с любыми данными.</p>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
